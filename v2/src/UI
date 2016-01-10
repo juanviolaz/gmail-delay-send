@@ -7,9 +7,9 @@ function doGet() {
 
 function parseUserDate(datestr) {
   debug('Parsing user date string:"' + datestr +'"');
-  
+
   var user_timezone_string = parseDateToUserTimezoneString(datestr);
-  
+
   if (user_timezone_string != null)
     return 'Your date was parsed successfully to:\n' + user_timezone_string;
   else
